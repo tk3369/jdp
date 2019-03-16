@@ -37,6 +37,34 @@ Chapter 5 provides various real-life examples that show cases specific design pa
 
 ## Some Details
 
+### Julia Overview
+
+The Julia overview section is intended to provide necessary basic knowledge for the reader to understand the various patterns in the book. This is not a substitute of the Julia manual or other beginners book/material.  Hence, the pace will be relatively fast and only specific subjects are chosen here.
+
+Modules and Packages
+- Defining a new module
+- Generally a single module is defined per package
+- How to use sub-modules
+- Exports and imports
+
+Types 
+- Construction
+- Type hierarchy, abstract vs concret types
+- Type promotion
+- Multiple Dispatch
+- Parametric types
+
+Interfaces
+- Purpose and benefits of using interfaces
+- How to define interfaces and compare with other languages
+- Example
+
+Meta-programming
+- First look at a simple macro example
+- Discuss whether macro is necessary compared to regular functions
+- Another example 
+
+
 ### Julia vs OOP
 
 (Use Java for comparison purpose.)
@@ -47,8 +75,8 @@ Julia
 - Interfaces are by convention (not defined in language)
 - Invariant parametric type (vs covariant/contravariant)
 
-SOLID(?)
-- Single Responsibility principle
+SOLID
+- Single Responsibility principle (function level)
 - Open-close principle
 - Liskov substitution principle
 - Interface segregation principle
@@ -105,6 +133,7 @@ Safety
 - Import Only What's Needed
 - Use nothing for programmer's null
 - Use missing for data gaps
+- High level exception handling
 
 ### Anti Patterns
 
