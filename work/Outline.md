@@ -70,23 +70,25 @@ SOLID(?)
 
 Structure
 - Use Module over Script
+- Separate concerns in different source files
+- Separate concerns in sub-modules
 - Accessor functions over direct struct attribute access 
-- Export Only What's Needed
 - Propagating Keyword Arguments
 
-Reusability
+Reusability and Extendability
 - Composition
 - Holy Traits
 - Parametric Types
-- Generic
+- Generic Functions
 
 Performance
-- Memory map for Out-of-Core Programming
 - Constant Globals
 - Struct of Array
 - Array of Struct
 - Pure functions
 - Immutable Objects (?)
+- Memory mapping
+- Shared memory 
 
 Readability
 - Domain Specific Languages
@@ -94,6 +96,12 @@ Readability
 
 Testability
 - Generated Test Cases
+- Mocking (ready yet?)
+- Specify types for function arguments
+
+Safety
+- Export Only What's Needed
+- Import Only What's Needed
 
 Convention
 - Proper use of nothing vs. missing
