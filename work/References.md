@@ -27,8 +27,11 @@ https://discourse.julialang.org/t/cumbersome-scoping-rules-for-try-catch-finally
 using do-syntax to abstract away pre/post work normally done in try/catch/finally
 
 https://discourse.julialang.org/t/clarification-on-type-piracy/5926
-
 type piracy
+
+# Blogs
+Invariant, Co-variant, Contra-variant
+https://blog.codecentric.de/en/2015/03/scala-type-system-parameterized-types-variances-part-1/
 
 # Open source packages
 
@@ -37,13 +40,13 @@ Plots
 DifferentialEquations
 MLK? or Koala.
 
-# Criticism
+# GoF Criticism
 
 Singletons are evil
 http://wiki.c2.com/?SingletonsAreEvil
 http://wiki.c2.com/?SimpletonPattern
 
-# Books
+# Related Books
 
 Design patterns in Dynamic Languges
 http://www.norvig.com/design-patterns/design-patterns.pdf
@@ -51,25 +54,43 @@ http://www.norvig.com/design-patterns/design-patterns.pdf
 # SOLID
 
 Single Responsibility Principle
+- _"Every software module should have only one reason to change"_
 - every function should focus on doing one thing
 - try to write small functions, long functions are code smell
 
 Open/Closed Principle
+- _"A software module/class is open for extension and closed for modification"_
 - Open for extension, closed for modification
 - Design packages as if they're frozen and not modifiable
 - Leverage types and multiple dispatch to allow for extension
 
 Liskov Substitution Principle
+- _"you should be able to use any derived class instead of a parent class and have it behave in the same manner without modification". It ensures that a derived class does not affect the behavior of the parent class, in other words that a derived class must be substitutable for its base class"_
 - Julia does not allow down-casting to a subtype!
 - Julia does allow runtime check as a subtype
+- See [solid_liskov_substitution.md](solid_liskov_substitution.md)
+
+Interface Segregation Principle
+- _"clients should not be forced to implement interfaces they don't use. Instead of one fat interface many small interfaces are preferred based on groups of methods, each one serving one sub module."_
+- Design small interfaces e.g. iterator is only a single function
+- Use traits for a complete implementation (why doesn't iterators do that?)
+
+Dependency Inversion Principle
+- _"high-level modules/classes should not depend on low-level modules/classes. Both should depend upon abstractions. Secondly, abstractions should not depend upon details. Details should depend upon abstractions."_
+- Use abstract types and multiple dispatch for different situations
+- An example is Logger. How to implement it such that it's easy to change e.g. adding a new logging destination like splunk
+
+# Challenges
+
+1. Find a way to illustrate patterns not using UML
+1. 
 
 # Ideas
 
 Package version and dependencies / semantic versioning
-Managing changes
-Testability
+Managing changes and lifecycle of code
+How to learn design patterns
 Notes sections - e.g. using Revise for rapid prototyping and development
-Find a way to illustrate patterns not using UML
 Have a chapter about anti-patterns
 Reference SOLID when describing the patterns
 Invariant types (vs covariant and contra-variant)
@@ -87,6 +108,8 @@ Related topics:
 - Producer/Consumer pattern (Tasks/co-routines) => manual not too detail and lacks examples https://docs.julialang.org/en/v1/manual/control-flow/#man-tasks-1
 - Empty generic function https://docs.julialang.org/en/v1/manual/methods/#Empty-generic-functions-1
 
+# Julia Manual
+
 Base.show is a good example of multiple dispatch
 
 https://docs.julialang.org/en/v1/manual/methods/#Design-Patterns-with-Parametric-Methods-1
@@ -99,5 +122,3 @@ https://docs.julialang.org/en/v1/manual/methods/#Abstract-containers-and-element
 
 https://docs.julialang.org/en/v1/manual/methods/#Complex-method-"cascades"-with-default-arguments-1
 
-Invariant, Co-variant, Contra-variant
-https://blog.codecentric.de/en/2015/03/scala-type-system-parameterized-types-variances-part-1/
