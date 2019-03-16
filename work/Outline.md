@@ -57,6 +57,7 @@ SOLID(?)
 ### OOP Patterns 
 
 (Determine which patterns are applicable to Julia or not)
+
 (Is this section really useful?)
 
 - Singleton, Builder, Factory, AbstractFactory, Prototype
@@ -66,22 +67,37 @@ SOLID(?)
 ### Julia Patterns
 
 (Don't have catchy titles yet and not sure if need them.)
-(Should probably organize these in several categories.)
 
-- Use Module Over Script
-- Holy Traits Trick
-- Memory map for Out-of-Core Programming
-- Generic Programming
-- Proper use of nothing vs. missing
-- Use accessors over direct struct attribute access 
+Structure
+- Use Module over Script
+- Accessor functions over direct struct attribute access 
 - Export Only What's Needed
-- Use Immutable Objects
+- Propagating Keyword Arguments
+
+Reusability
+- Composition
+- Holy Traits
+- Parametric Types
+- Generic
+
+Performance
+- Memory map for Out-of-Core Programming
 - Constant Globals
-- Domain Specific Language using Macros
 - Struct of Array
 - Array of Struct
-- Test Cases using Macros
-- Propagation of Keyword Arguments
+- Pure functions
+- Immutable Objects (?)
+
+Readability
+- Domain Specific Languages
+- Small functions
+
+Testability
+- Generated Test Cases
+
+Convention
+- Proper use of nothing vs. missing
+
 
 ### Anti Patterns
 
