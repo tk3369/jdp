@@ -88,24 +88,22 @@ Performance
 - Pure functions
 - Immutable Objects (?)
 - Memory mapping
-- Shared memory 
+- Shared memory
 
 Readability
 - Domain Specific Languages
-- Small functions
 
 Testability
 - Generated Test Cases
 - Mocking (ready yet?)
 - Specify types for function arguments
+- Single responsibility functions
 
 Safety
 - Export Only What's Needed
 - Import Only What's Needed
-
-Convention
-- Proper use of nothing vs. missing
-
+- Use nothing for programmer's null
+- Use missing for data gaps
 
 ### Anti Patterns
 
