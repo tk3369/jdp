@@ -8,6 +8,9 @@ http://www.stochasticlifestyle.com/type-dispatch-design-post-object-oriented-pro
 - traits and THTT (Tim Holy Trait Trick)
 - composition vs inheritance
 
+Lyndon White on Multiple Dispatch & Traits
+https://white.ucc.asn.au/2018/10/03/Dispatch,-Traits-and-Metaprogramming-Over-Reflection.html
+
 # Discourse posts
 
 https://discourse.julialang.org/t/composition-and-inheritance-the-julian-way/
@@ -22,6 +25,10 @@ this is a controversial topic
 
 https://discourse.julialang.org/t/cumbersome-scoping-rules-for-try-catch-finally/4582/8
 using do-syntax to abstract away pre/post work normally done in try/catch/finally
+
+https://discourse.julialang.org/t/clarification-on-type-piracy/5926
+
+type piracy
 
 # Open source packages
 
@@ -40,6 +47,21 @@ http://wiki.c2.com/?SimpletonPattern
 
 Design patterns in Dynamic Languges
 http://www.norvig.com/design-patterns/design-patterns.pdf
+
+# SOLID
+
+Single Responsibility Principle
+- every function should focus on doing one thing
+- try to write small functions, long functions are code smell
+
+Open/Closed Principle
+- Open for extension, closed for modification
+- Design packages as if they're frozen and not modifiable
+- Leverage types and multiple dispatch to allow for extension
+
+Liskov Substitution Principle
+- Julia does not allow down-casting to a subtype!
+- Julia does allow runtime check as a subtype
 
 # Ideas
 
