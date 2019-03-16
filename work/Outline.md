@@ -91,7 +91,8 @@ Performance
 - Shared memory
 
 Readability
-- Domain Specific Languages
+- Use macros to build DSL
+- Use macros to generate functions
 
 Testability
 - Generated Test Cases
