@@ -84,19 +84,23 @@ SOLID
 
 ### OOP Patterns 
 
-(Determine which patterns are applicable to Julia or not)
+(Should determine which patterns are applicable to Julia or not)
 
 (Is this section really useful?)
 
-- Singleton, Builder, Factory, AbstractFactory, Prototype
-- Chain of Responsibility, Command, Iterator, Mediator, Memento, Observer, State, Strategy, Template, Visitor
-- Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy
+From wikipedia.
+
+- Creational: Abstract factory, Builder, Dependency injection, Factory method, Lazy initialization, Multiton, Object pool, Prototype, RAII, Singleton
+- Structural: Adapter, Bridge, Composite, Decorator, Delegation, Facade, Flyweight, Front, controller, Marker, interface, Module, Proxy, Twin
+- Behaviorial: Blackboard, Chain of responsibility, Command, Interpreter, Iterator, Mediator, Memento, Null object, Observer, Servant, Specification, State, Strategy, Template method, Visitor
+- Functional: Closure, Currying, Function composition, Functor, Monad, Generator
+- Concurrency: Active object, Actor, Balking, Barrier, Binding properties, Coroutine, Compute kernel, Double-checked locking,Event-based asynchronous, Fiber, Futex, Futures and promises, Guarded suspension, Immutable object, Join, Lock, Messaging, Monitor, Nuclear, Proactor, Reactor, Read write lock, Scheduler, Thread pool, Thread-local storage
 
 ### Julia Patterns
 
 (Don't have catchy titles yet and not sure if need them.)
 
-Structure
+Organizational
 - Use Module over Script
 - Separate concerns in different source files
 - Separate concerns in sub-modules
@@ -117,6 +121,7 @@ Performance
 - Immutable Objects (?)
 - Memory mapping
 - Shared memory
+- Type Stability (?)
 
 Readability
 - Use macros to build DSL
