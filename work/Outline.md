@@ -121,7 +121,6 @@ Performance
 - Immutable Objects (?)
 - Memory mapping
 - Shared memory
-- Type Stability (?)
 
 Readability
 - Use macros to build DSL
@@ -146,4 +145,6 @@ Safety
 - Excessive Exception Handling
 - Untyped struct members
 - Premature optimization
+- Type Stability (?)
+
 
