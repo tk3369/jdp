@@ -436,6 +436,8 @@ _Level_: Intermediate
 
 _Description_: This chapter will describe several sets of design patterns that have evolved in the past several years.  Julia is a versatile and expressive programming language.  When the language is used properly, a software engineer can develop very robust programs.
 
+_**Notes**: This chapter will contain a lot of patterns that can be applied in various use cases and domains such as scientific computing and data science._
+
 Main Chapter Headings (3-5):
 
 1. Organizational Patterns
@@ -487,10 +489,50 @@ The objective of this part is demonstrate some of the best designed packages in 
 
 _**NOTE: The specific projects will be determined at a later stage.  I may choose 1, 2, or 3 projects depending on the size of the open source projects.**_
 
-#### Chapter 12.  Project X (TBD)
+#### Chapter 12.  HTTP
 
-TBD
+_Objective_: The reader will learn from the design of the HTTP.jl package.
 
-#### Chapter 13.  Project Y (TBD)
+_Level_: Basic
 
-TBD
+_Description_:  This chapter will focus on examining some code fragments from the HTTP.jl package, which is highly modularized and uses many of the key design patterns.
+
+Main Chapter Headings (3-5):
+
+1. Package Organization
+
+2. Macros 
+
+3. Synchronization
+
+Skills Learned:
+
+1. How to apply Separation of Concern 
+
+2. How to reduce boilerplate code using macros
+
+3. How to protect critical part of code with locks
+
+#### Chapter 13.  DataFrames
+
+_Objective_: The reader will learn from the design of the DataFrames.jl package.
+
+_Level_: Basic
+
+_Description_:  This chapter will focus on examining some code fragments from the DataFrames.jl package.  
+
+Main Chapter Headings (3-5):
+
+1. Abstract type hierarchy
+
+2. Generic functions 
+
+3. Type Promotion
+
+Skills Learned:
+
+1. How to create a type hierarchy for extensible code 
+
+2. How to utilize generic functions from other packages e.g. describe
+
+3. How to convert data types using type promotion techniques

@@ -11,7 +11,7 @@
    - Types
    - Multiple Dispatch
    - Interfaces
-   - Metaprogramming
+   - Meta-programming
    - etc.
 3. Programming Paradigm
    - Benefits of using design patterns
@@ -29,7 +29,7 @@ Chapter 1 is just introduction about the book.
 
 Chapter 2 contains a brief introduction of the most fundamental concepts that are needed for new Julia developers.  
 
-Chapter 3 provides some history about the wide-spread patterns from the GofF book and discusses various aspects of Julia language design that sets apart from the object oriented progrmaming paradigm.
+Chapter 3 provides some history about the wide-spread patterns from the GofF book and discusses various aspects of Julia language design that sets apart from the object oriented programming paradigm.
 
 Chapter 4 covers a list of design patterns coming from the object-oriented programming paradigm and how the same concepts can be applied to Julia programming.  Then, it discusses a list of Julia-specific design patterns and anti-patterns.
 
@@ -49,7 +49,7 @@ Modules and Packages
 
 Types 
 - Construction
-- Type hierarchy, abstract vs concret types
+- Type hierarchy, abstract vs concrete types
 - Type promotion
 - Multiple Dispatch
 - Parametric types
@@ -98,53 +98,53 @@ From wikipedia.
 
 ### Julia Patterns
 
-(Don't have catchy titles yet and not sure if need them.)
-
-Organizational
-- Use Module over Script
-- Separate concerns in different source files
-- Separate concerns in sub-modules
-- Accessor functions over direct struct attribute access 
-- Propagating Keyword Arguments
+Organizational (?)
+- Sub-Module Pattern: separate concerns in sub-modules
+- Accessor Pattern: accessor functions over direct struct attribute access
+- Keyword Argument Extraction Pattern
 
 Reusability and Extendability
-- Composition
-- Holy Traits
-- Parametric Types
-- Generic Functions
+- Method Forwarding Pattern (forwarding child object methods)
+- Holy Trait Pattern
+- Parametric Type Pattern
+- Generic Function Pattern (extending from Base.whatever)
 
 Performance
-- Constant Globals
-- Struct of Array
-- Array of Struct
-- Pure functions
-- Immutable Objects (?)
-- Memory mapping
-- Shared memory
+- Constant Global Pattern
+- Struct of Arrays Pattern
+- Pure Function Pattern
+- Memory Map Pattern
+- Shared Memory Pattern
 
-Readability
-- Use macros to build DSL
-- Use macros to generate functions
+Maintainability / Readability
+- Keyword Definition Pattern (`Base.@kwdef`)
+- Boilerplate Reduction Pattern (`@eval` macro to define functions)
+- Domain Specific Language Pattern (Diff Eq ecosystem?)
+- (???) Generated Functions Pattern 
 
 Testability
-- Generated Test Cases
-- Mocking (ready yet?)
-- Specify types for function arguments
-- Single responsibility functions
+- Clear Type Pattern (Specify types for function arguments)
+- Single Responsibility Pattern
+- Mocking Pattern
 
 Safety
-- Export Only What's Needed
-- Import Only What's Needed
-- Use nothing for programmer's null
-- Use missing for data gaps
-- High level exception handling
+- Minimum Viable Interface Pattern (Export Only What's Needed)
+- Minimum Dependency Pattern (Import Only What's Needed)
+- Nothingness Pattern (handle nothingness for programmer's null cases)
+- Missingness Pattern (use missing for unknown data; propagation)
+- Status Result Pattern (function returning status and result tuple)
+- Exception Handling Pattern
 
 ### Anti Patterns
 
-- Type Priracy
-- Excessive Exception Handling
-- Untyped struct members
-- Premature optimization
-- Type Stability (?)
+- Untyped Struct Members Pattern (boxed)
+- Abstract Struct Members Pattern (boxed)
+- Type Piracy Pattern
+- Excessive Exception Handling (hurting performance)
+
+**Other ideas?**
+- Premature optimization (anti-pattern)
+- Type Stability
+
 
 

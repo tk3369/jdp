@@ -33,7 +33,12 @@ type piracy
 Invariant, Co-variant, Contra-variant
 https://blog.codecentric.de/en/2015/03/scala-type-system-parameterized-types-variances-part-1/
 
+The Expression problem
+https://eli.thegreenplace.net/2016/the-expression-problem-and-its-solutions/
+
 # Open source packages
+
+OnlineStats
 
 StatsBase
 Plots
@@ -121,4 +126,26 @@ https://docs.julialang.org/en/v1/manual/methods/#Dispatch-on-one-argument-at-a-t
 https://docs.julialang.org/en/v1/manual/methods/#Abstract-containers-and-element-types-1 (don't understand)
 
 https://docs.julialang.org/en/v1/manual/methods/#Complex-method-"cascades"-with-default-arguments-1
+
+# Tips/Tricks
+
+Package Alias 
+https://github.com/malmaud/TensorFlow.jl/blob/859d2b4b08eaef3019cc2a4075e112e76b346a77/src/variable.jl#L17-L18
+
+Debug macro
+https://github.com/denizyuret/Knet.jl/blob/1a306d011c4f0b5ad0e3517495840debe665aa4b/src/Knet.jl#L6
+
+Using init function
+https://github.com/denizyuret/Knet.jl/blob/1a306d011c4f0b5ad0e3517495840debe665aa4b/src/Knet.jl#L148-L157
+
+Sample BenchmarkTools usage
+https://github.com/JuliaArrays/BlockArrays.jl/blob/master/benchmark/runbenchmarks.jl
+- benchmark suite
+- testing implementation by constructing different types
+- generates reports
+
+Kubernetes binding via Swagger.jl
+https://github.com/JuliaComputing/Kuber.jl
+- Very interesting with submodule alias
+
 
