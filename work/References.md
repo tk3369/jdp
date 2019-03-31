@@ -53,7 +53,7 @@ http://wiki.c2.com/?SimpletonPattern
 
 # Related Books
 
-Design patterns in Dynamic Languges
+Design patterns in Dynamic Languages
 http://www.norvig.com/design-patterns/design-patterns.pdf
 
 # SOLID
