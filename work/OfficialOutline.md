@@ -29,10 +29,8 @@ Tom specializes in the financial services domain and currently works at Western 
 
 ## Can you recommend a good technical reviewer for your book?
 
-Confirmed:
 Scott Jones (scott@gandalfsoftware.com)
 
-_Will find more reviewers depending on how much time commitment is required._
 
 ## PART ONE: BACKGROUND RESEARCH
 
