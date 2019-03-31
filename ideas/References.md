@@ -1,5 +1,9 @@
 # References
 
+**This is just a random set of links and notes**
+
+## Key blog posts
+
 Type-Dispatch Design: Post Object-Oriented Programming for Julia
 http://www.stochasticlifestyle.com/type-dispatch-design-post-object-oriented-programming-julia/
 - duck typing
@@ -29,7 +33,7 @@ using do-syntax to abstract away pre/post work normally done in try/catch/finall
 https://discourse.julialang.org/t/clarification-on-type-piracy/5926
 type piracy
 
-# Blogs
+# Other Blogs
 Invariant, Co-variant, Contra-variant
 https://blog.codecentric.de/en/2015/03/scala-type-system-parameterized-types-variances-part-1/
 
@@ -88,7 +92,6 @@ Dependency Inversion Principle
 # Challenges
 
 1. Find a way to illustrate patterns not using UML
-1. 
 
 # Ideas
 
@@ -148,4 +151,6 @@ Kubernetes binding via Swagger.jl
 https://github.com/JuliaComputing/Kuber.jl
 - Very interesting with submodule alias
 
+## Design Principles
 
+https://principles.adactio.com
